@@ -27,10 +27,12 @@ main {
   .plan-price p span:nth-child(1) {
     font-weight: 700;
     text-align: left;
+    color: black;
   }
   .plan-price p span:nth-child(2) {
     color: var(--neutral-desaturated-blue);
     text-align: left;
+    font-weight: 500;
   }
   .plan-price p {
     text-align: end;
