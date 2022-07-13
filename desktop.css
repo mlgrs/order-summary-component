@@ -1,0 +1,54 @@
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: cover;
+}
+main {
+    width: 500px;
+}
+.subtitle {
+    line-height: 25px;
+}
+.plan-information {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items:center;
+    background-color: var(--neutral-very-pale-blue);
+    margin: 20px 40px;
+    border-radius: 16px;
+    padding: 24px;        
+  }
+.plan-price {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 6px;
+  }
+  .plan-price p span:nth-child(1) {
+    font-weight: 700;
+    text-align: left;
+  }
+  .plan-price p span:nth-child(2) {
+    color: var(--neutral-desaturated-blue);
+    text-align: left;
+  }
+  .plan-price p {
+    text-align: end;
+    font-size: var(--font-size-p);
+    font-weight: bold;
+    color: var(--primary-bright-blue);
+  }
+  .plan-price p a{
+    text-align: end;
+    font-size: var(--font-size-p);
+    font-weight: bold;
+    color: var(--primary-bright-blue);
+  }
+  .primary-button {
+    background-color: var(--primary-bright-blue);
+    border-radius: 15px;
+    padding: 18px;
+    border: none;
+    width: 82%;
+    margin-top: 16px;
+  }

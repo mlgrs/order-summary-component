@@ -1,0 +1,140 @@
+:root {
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --primary-bright-blue: hsl(245, 75%, 52%);
+  --neutral-very-pale-blue: hsl(225, 100%, 98%);
+  --neutral-desaturated-blue: hsl(224, 23%, 55%);
+  --neutral-dark-blue: hsl(223, 47%, 23%);
+  --hover-lilac: rgb(175, 142, 243);
+  --font-size-p: 16px;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-pale-blue);
+  font-family: 'Red Hat Display', sans-serif;
+}
+main {
+  display: grid;
+  place-content: center;
+  width: 400px;
+  height: 100vh;
+  margin: auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.order {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 20px;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+}
+.image-container {
+  margin: 0;
+}
+.image-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 25vh;
+  border-radius: 20px 20px 0 0;
+}
+.order p {
+  margin: 0;
+}
+.title {
+  font-size: 26px;
+  text-align: center;
+  font-weight: 900;
+  margin: 0;
+  margin-top: 28px;
+  color: var(--neutral-dark-blue);
+}
+.subtitle {
+  text-align: center;
+  color: var(--neutral-desaturated-blue);
+  font-weight: 500;
+  padding: 18px;
+  font-size: var(--font-size-p);
+}
+.plan-information {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items:center;
+  background-color: var(--neutral-very-pale-blue);
+  margin: 12px 28px;
+  border-radius: 16px;
+  padding: 18px;        
+}
+.plan-information img {
+  display: flex;
+  align-self:center;
+}
+.plan-price {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 6px;
+}
+.plan-price p span:nth-child(1) {
+  font-weight: 700;
+  text-align: left;
+}
+.plan-price p span:nth-child(2) {
+  color: var(--neutral-desaturated-blue);
+  text-align: left;
+}
+.plan-price p a {
+  text-align: right;
+  font-size: var(--font-size-p);
+  font-weight: bold;
+  color: var(--primary-bright-blue);
+}
+.plan-price a:hover {
+  text-decoration: none;
+  color: var(--hover-lilac);
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.primary-button {
+  background-color: var(--primary-bright-blue);
+  border-radius: 15px;
+  padding: 18px;
+  border: none;
+  width: 85%;
+  margin-top: 16px;
+  box-shadow: 0px 8px 20px 3px hsl(245, 93%, 89%);
+}
+.primary-button a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  font-size: var(--font-size-p);
+}
+.primary-button:hover {
+  background-color: var(--hover-lilac);
+}
+.secondary-button {
+  background-color: white;
+  margin: 30px;
+  border: none;
+  width: 90%;
+}
+.secondary-button a {
+  text-decoration: none;
+  color: var(--neutral-desaturated-blue);
+  font-weight: bold;
+  font-size: var(--font-size-p);
+  font-weight: 700;
+}
+.secondary-button a:hover {
+  color: black;
+}
