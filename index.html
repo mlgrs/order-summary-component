@@ -14,52 +14,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Quicksand:wght@300;500;700&family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
-
     <title>Frontend Mentor | Order summary card</title>
   </head>
   <body>
     <main>
       <div class="container">
         <div class="order">
-          <article class="image-container">
-            <img src="./images/illustration-hero.svg" alt="" />
-          </article>
-          <p>
+          <picture class="image-container">
+            <source media="(min-width:  375px)" srcset="./images/illustration-hero.svg">
+            <img src="./images/illustration-hero.svg" alt="girl listening to music" />
+          </picture>
+          <span>
             <h1 class="title">Order Summary</h1>
-
-            <span class="subtitle">
+            <p class="subtitle">
             You can now listen to millions  of<br> songs, 
             audiobooks, and podcasts on <br> any device 
             anywhere you like!
-            </span>
-          </p>
+            </p>
+          </span>
           
 
           <article class="plan-information">
             <img src="./images/icon-music.svg" alt="music icon" />
             <div class="plan-price">
+              <span>
+                <p>Annual Plan</p> 
+                <p>$59.99/year</p>
+              </span>
               <p>
-                <span>Annual Plan</span> 
-              
-                <span>$59.99/year</span>
+                <a href="">Change</a>
               </p>
-              <p><a href="/">Change</a></p>
             </div>
-            
           </article>
 
           <article class="buttons">
             <button class="primary-button">
-            <a href="#">Proceed to Payment</a>
-          </button>
-          <button class="secondary-button">
-            <a href="#">Cancel Order</a>
-          </button>
+            Proceed to Payment
+            </button>
+            <button class="secondary-button">
+            Cancel Order
+            </button>
           </article>
-          
-        </main>
-        
-    </div>
-  </div>
+        </div>
+      </div> 
+    </main>
+    
   </body>
 </html>
