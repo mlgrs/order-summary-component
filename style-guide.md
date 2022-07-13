@@ -13,6 +13,7 @@ The designs were created to the following widths:
 
 - Pale blue: hsl(225, 100%, 94%)
 - Bright blue: hsl(245, 75%, 52%)
+- Lila: rgb(190, 170, 231);
 
 ### Neutral
 

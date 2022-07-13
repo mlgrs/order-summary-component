@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Quicksand:wght@300;500;700&family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 1440px)">
     <title>Frontend Mentor | Order summary card</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -24,6 +25,7 @@
         --neutral-very-pale-blue: hsl(225, 100%, 98%);
         --neutral-desaturated-blue: hsl(224, 23%, 55%);
         --neutral-dark-blue: hsl(223, 47%, 23%);
+        --hover-lilac: rgb(175, 142, 243);
         --font-size-p: 16px;
       }
       body {
@@ -35,14 +37,14 @@
       }
       main {
         display: grid;
-        place-items: center;
-        width: 100%;
+        place-content: center;
+        width: 400px;
         height: 100vh;
+        margin: auto;
       }
       .container {
         display: flex;
         flex-direction: column;
-        
       }
       .order {
         display: grid;
@@ -51,7 +53,6 @@
         align-items: center;
         background-color: white;
         border-radius: 20px;
-        
       }
       .image-container {
         margin: 0;
@@ -73,7 +74,7 @@
         text-align: center;
         color: var(--neutral-desaturated-blue);
         font-weight: 500;
-        padding: 20px;
+        padding: 18px;
       }
       .plan-information {
         display: grid;
@@ -81,7 +82,7 @@
         gap: 10px;
         align-items:center;
         background-color: var(--neutral-very-pale-blue);
-        margin: 10px 20px;
+        margin: 12px 28px;
         border-radius: 16px;
         padding: 18px;        
       }
@@ -93,19 +94,25 @@
         display: grid;
         grid-template-columns: auto 1fr;
         align-items: center;
-        padding: 10px;
+        padding: 6px;
       }
       .plan-price p span:nth-child(1) {
         font-weight: 700;
+        text-align: left;
       }
       .plan-price p span:nth-child(2) {
         color: var(--neutral-desaturated-blue);
+        text-align: left;
       }
       .plan-price p a {
-        text-align: end;
+        text-align: right;
         font-size: var(--font-size-p);
         font-weight: bold;
         color: var(--primary-bright-blue);
+      }
+      .plan-price a:hover {
+        text-decoration: none;
+        color: var(--hover-lilac);
       }
       .buttons {
         display: flex;
@@ -117,7 +124,7 @@
         border-radius: 15px;
         padding: 18px;
         border: none;
-        width: 90%;
+        width: 85%;
         margin-top: 16px;
         box-shadow: 0px 8px 20px 3px hsl(245, 93%, 89%);
       }
@@ -127,6 +134,9 @@
         color: white;
         font-weight: 700;
         font-size: var(--font-size-p);
+      }
+      .primary-button:hover {
+        background-color: var(--hover-lilac);
       }
       .secondary-button {
         background-color: white;
@@ -140,6 +150,9 @@
         font-weight: bold;
         font-size: var(--font-size-p);
         font-weight: 700;
+      }
+      .secondary-button a:hover {
+        color: black;
       }
     </style>
   </head>
@@ -164,7 +177,8 @@
             <img src="./images/icon-music.svg" alt="music icon" />
             <div class="plan-price">
               <p>
-                <span>Annual Plan</span>
+                <span>Annual Plan</span> 
+              
                 <span>$59.99/year</span>
               </p>
               <p><a href="">Change</a></p>
