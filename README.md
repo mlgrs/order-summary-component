@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/my_screenshot.png)
+![](./design/active-states.jpg)
 
 ### Links
 
