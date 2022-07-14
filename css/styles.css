@@ -90,8 +90,10 @@ main {
   text-align: left;
   font-weight: 500;
 }
-.plan-price p a {
+.plan-price p {
   text-align: right;
+}
+.plan-price p a {
   font-size: var(--font-size-p);
   font-weight: bold;
   color: var(--primary-bright-blue);
