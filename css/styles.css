@@ -63,7 +63,6 @@ main {
 .plan-information {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 10px;
   align-items:center;
   background-color: var(--neutral-very-pale-blue);
   margin: 12px 28px;
@@ -82,6 +81,7 @@ main {
 }
 .plan-price span p:nth-child(1) {
   font-weight: 700;
+  font-size: 14px;
   text-align: left;
   color: black;
 }
@@ -89,12 +89,13 @@ main {
   color: var(--neutral-desaturated-blue);
   text-align: left;
   font-weight: 500;
+  font-size: 14px;
 }
 .plan-price p {
   text-align: right;
 }
 .plan-price p a {
-  font-size: var(--font-size-p);
+  font-size: 14px;
   font-weight: bold;
   color: var(--primary-bright-blue);
 }
