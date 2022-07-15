@@ -140,6 +140,6 @@ main {
   font-size: var(--font-size-p);
   font-weight: 700;
 }
-.secondary-button a:hover {
+.secondary-button:hover {
   color: black;
 }
